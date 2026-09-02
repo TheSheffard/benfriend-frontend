@@ -1,7 +1,7 @@
 'use client';
 import { useEffect, useState } from 'react';
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://benfriendbackend.vercel.app';
 const WS_URL = API_URL.replace(/^http/, 'ws');
 
 type Alert = {
