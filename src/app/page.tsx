@@ -10,12 +10,20 @@ export default function HomePage() {
         <span className="text-sm font-semibold tracking-tight text-slate-900">
           Exam Proctor
         </span>
-        <Link
-          href="/login"
-          className="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors"
-        >
-          Login
-        </Link>
+        <div className="flex items-center gap-4">
+          <Link
+            href="/login"
+            className="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors"
+          >
+            Login
+          </Link>
+          <Link
+            href="/invigilator"
+            className="text-sm font-medium text-indigo-600 hover:text-indigo-800 transition-colors"
+          >
+            Invigilator
+          </Link>
+        </div>
       </nav>
 
       {/* Hero */}
@@ -35,12 +43,18 @@ export default function HomePage() {
             monitored exam session where AI detects prohibited behaviors—turning away,
             missing presence, or device usage—instantly alerting invigilators.
           </p>
-          <div className="mt-10 flex items-center gap-4">
+          <div className="mt-10 flex flex-wrap items-center gap-4">
             <Link
               href="/login"
               className="inline-flex items-center justify-center rounded-lg bg-slate-900 px-7 py-3.5 text-sm font-semibold text-white shadow-sm hover:bg-slate-800 transition-all duration-200 hover:shadow-md"
             >
               Begin Verification
+            </Link>
+            <Link
+              href="/invigilator"
+              className="inline-flex items-center justify-center rounded-lg border border-stone-200 bg-white px-7 py-3.5 text-sm font-semibold text-slate-700 shadow-sm hover:bg-stone-50 transition-all duration-200 hover:shadow-md"
+            >
+              Invigilator Dashboard
             </Link>
             <span className="text-sm text-slate-400">No download required</span>
           </div>
@@ -59,7 +73,7 @@ export default function HomePage() {
             </div>
             <p className="text-sm text-slate-600 leading-relaxed">
               YuNet face detection and SFace embedding compare live frames against
-              pre-computed student references using cosine similarity.
+              pre‑computed student references using cosine similarity.
             </p>
           </article>
 
