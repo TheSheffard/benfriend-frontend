@@ -2,7 +2,7 @@
 import { useCallback, useState } from 'react';
 import Camera from '../components/Camera';
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://benfriendbackend.vercel.app';
 const REQUIRED_SAMPLES = 3;
 
 export default function LoginPage() {
